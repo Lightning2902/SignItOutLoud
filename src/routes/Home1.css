@@ -1,0 +1,111 @@
+#details{
+    margin:14rem 0rem 0rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20rem;
+    width: 94%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#img11s{
+    max-width: 38%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 35px;
+    position: relative;
+    background: transparent;
+    z-index: 1;
+}
+
+#details img:hover{
+    cursor: pointer;
+    /* background-image: url("../images/logo1.jpg"); */
+    
+}
+
+#details img::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: url("../images/logo1.jpg");
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 360ms ease-in-out;
+}
+
+#details img:hover::before{
+    transform: scaleX(1);
+}
+
+#contents{
+    
+    height: auto;
+}
+
+#contents h2{
+    margin-left: 12rem;
+    font-size: 1rem;
+    color: #D161BC;
+}
+
+#contents p{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold ;
+}
+
+#thisbtns{
+    position: relative;
+    margin-left: 14rem;
+    margin-top: 1rem;
+    padding: 1rem 2.9rem;
+    border: none;
+    border-radius: 28px;
+    background-image: linear-gradient(to right,#346FC6,#9C55B1);
+    color: white;
+    letter-spacing: 2.5px;
+    font-size: 1.1rem;
+    z-index: 1;
+    
+}
+
+
+#thisbtns:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right,#28579c,#6b3a7a);
+    
+}
+
+#thisbtns::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right,#28579c,#6b3a7a);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 360ms ease-in-out;
+}
+
+#thisbtns:hover::before{
+    transform: scaleX(1);
+}
+
+#explorelinks{
+    margin-left: 3rem;
+    color: cadetblue;
+}
+
+
+

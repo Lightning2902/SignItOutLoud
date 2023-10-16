@@ -1,0 +1,69 @@
+#brief{
+    margin:8rem 0rem 0rem 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#points{
+    max-width: 32rem;
+    height: auto;
+}
+
+#points h2{
+    font-size: 1rem;
+    color: #D161BC;
+}
+
+#points p{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: bold ;
+}
+
+#points button{
+    margin-top: 1rem;
+    padding: 1rem 2.9rem;
+    border: none;
+    border-radius: 28px;
+    background-image: linear-gradient(to right,#346FC6,#9C55B1);
+    color: white;
+    letter-spacing: 2.5px;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+}
+
+#thatbtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(to right,#28579c,#6b3a7a);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 360ms ease-in-out;
+}
+
+#brief img{
+    max-width: 38%;
+    height: 20rem;
+    border-radius: 15px;
+    margin-top:6rem;
+}
+
+
+#thatbtn:hover{
+    background-image: linear-gradient(to right,#28579c,#6b3a7a);
+    cursor: pointer;
+}
+
+#thatbtn:hover::before{
+    transform: scaleX(1);
+}
+
